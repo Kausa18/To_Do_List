@@ -9,12 +9,12 @@ class TaskTile extends StatelessWidget {
   final VoidCallback onEdit;
 
   const TaskTile({
-    Key? key,
+    super.key,
     required this.task,
     required this.onToggle,
     required this.onDelete,
     required this.onEdit,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
